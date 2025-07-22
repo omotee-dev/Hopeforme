@@ -1,0 +1,365 @@
+ <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hope for Me</title>
+    <link href="./output.css" rel="stylesheet">
+</head>
+<body> 
+    <!-- nav bar -->
+    <nav class="bg-pink-800 fixed top-0 left-0 w-full z-50 shadow-lg backdrop-blur-sm">
+        <div class="max-w-5xl flex flex-wrap items-center justify-between mx-auto p-4">
+          
+          <!-- Logo -->
+          <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse transition-all duration-300 hover:scale-105">
+            <span class="font-poppins self-center text-white uppercase text-3xl font-semibold whitespace-nowrap tracking-wide transition-colors duration-300 hover:text-pink-200 dark:text-white">
+              Hope For Me
+            </span>
+          </a>
+      
+          <!-- Hamburger for Mobile -->
+          <button id="menu-toggle" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-white rounded-lg md:hidden hover:bg-pink-800 focus:outline-none focus:ring-2 focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-5 h-5" aria-hidden="true" fill="none" viewBox="0 0 17 14" xmlns="http://www.w3.org/2000/svg">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+            </svg>
+          </button>
+      
+          <!-- Nav Links -->
+          <div class="hidden w-full md:block md:w-auto" id="mobile-menu">
+           <ul class="flex flex-col font-medium mt-4 md:flex-row md:space-x-10 md:mt-0 text-white">
+              <li>
+                <a href="#" class="block py-2 px-3 md:p-0 text-xl hover:text-pink-200 transition-all duration-300 relative group hover:scale-105 decoration-pink-400"  aria-current="page">Home
+                    <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-pink-200 transition-all duration-300 group-hover:w-full"></span>
+                </a>
+              </li>
+              
+              <li>
+                <a href="#services" class="block py-2 px-3 text-xl md:p-0 hover:text-pink-200 transition duration-300 relative group hover:scale-105  decoration-pink-400">Services
+                    <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-pink-200 transition-all duration-300 group-hover:w-full"></span>
+
+                </a>
+              </li>
+              <li>
+                <a href="#donate" class="block py-2 px-3 text-xl md:p-0 hover:text-pink-200 transition duration-300 relative group hover:scale-105 decoration-pink-400">Donate
+                    <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-pink-200 transition-all duration-300 group-hover:w-full"></span>
+                </a>
+              </li>
+              <li>
+                <a href="#contact" class="block py-2 px-3 text-xl md:p-0 hover:text-pink-200 transition duration-300 relative group hover:scale-105 decoration-pink-400">Contact
+                    <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-pink-200 transition-all duration-300 group-hover:w-full"></span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          
+        </div>
+    </nav> 
+
+    <!-- hero section -->
+    <header class="relative w-full overflow-hidden">
+      
+      <div class="relative ">
+        <img src="../assets/medium-shot-kid-with-crossed-arms_23-2148860399.webp" alt="image of a child" class="w-full h-[60vh] sm:h-[70vh] md:h-[80vh] lg:h-screen object-cover" loading="eager">
+
+        <!-- dark overlay -->
+        <div class="absolute inset-0 bg-black/40 z-10"></div>
+
+        <!-- Typewriter positioned absolutely -->
+        <div class="absolute inset-0 flex items-center justify-center -mt-16 md:-mt-20 lg:-mt-24 xl:-mt-24 z-20">
+            <h1 id="typewriter" class="font-poppins text-white sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl leading-tight md:leading-snug tracking-normal font-bold text-center px-4"></h1>
+        </div>
+        
+        <!-- Mission text positioned absolutely and separately -->
+        <div class="absolute inset-0 flex items-center justify-center pt-20 sm:pt-28 md:pt-32 lg:pt-40 xl:pt-48 z-20">
+          <div class="text-center px-4 max-w-6xl">
+              <p id="mission-text" class="text-white/90 sm:text-lg md:text-xl lg:text-xl font-medium max-w-2xl mx-auto sm:mb-8 md:mb-10 mb-12 text-center sm:pt-16 md:pt-10 lg:pt-0 px-4 opacity-0 translate-y-16 transition-all duration-1000 ease-out">
+                We empower vulnerable children through education, care, and support — building a future filled with possibilities.
+              </p>
+
+                <!-- CTA Button -->
+              <button id="cta-button" class="bg-white text-pink-700 hover:bg-pink-700 hover:text-white font-poppins font-bold text-lg px-8 py-4 rounded-lg mb-6 transition-all duration-300 transform hover:scale-105 opacity-0 translate-y-12">
+                Donate Now
+              </button>
+
+                <!-- Trust Builder -->
+              <p id="trust-text" class="text-white/80 text-lg md:text-xl font-bold opacity-0 translate-y-12 transition-all duration-1000 ease-out">
+                    Over 1,000 children supported across Nigeria since 2023.
+              </p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+      <!-- The Visionaire -->
+    <section class="bg-gray-50 py-10 sm:py-16">
+      <div class="flex flex-col md:flex-row items-center gap-10 px-4 max-w-6xl mx-auto">
+        <img src="../assets/FB_IMG_1748621193310.jpg" alt="Modupe Akinteye" class="w-full max-w-[400px] mx-auto md:w-[350px] h-[50vh] max-sm:h-[300px] aspect-[3/4] object-cover object-top rounded-lg shadow-lg hover:scale-105 transition duration-300" loading="lazy">
+        <div class="text-center md:text-left ">
+          <h2 class="font-poppins text-4xl font-bold text-gray-800 mb-4 hover:text-blue-600 transition-colors">The Visioneer</h2>
+
+          <p class="font-poppins text-gray-800 text-base sm:text-lg lg:text-xl max-w-2xl leading-relaxed "><span class="font-semibold text-gray-900">Modupe Akinteye</span> is the visionary founder of <span class="font-semibold text-gray-900">Hope For Me</span>, a non-profit organization dedicated to restoring hope in underserved communities. Driven by her own experiences of hardship and resilience, Modupe started the NGO to give vulnerable children and families a chance at a better future.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Carousel section -->
+    <section class="pt-0 md:pt-7 sm:px-4" >
+      <div class="flex items-center justify-center md:pb-10 px-3">
+        <p class="text-pink-900 sm:text-2xl md:text-4xl font-serif font-semibold uppercase leading-relaxed text-justify">Our Previous Programs and Outreaches in Pictures</p>
+      </div>
+
+        <!-- Carousel Container -->
+        <div class="relative w-full max-w-6xl mx-auto">
+            <!-- This is the main viewport - only shows one image at a time the overflow hidden does the job of showing one image-->
+            <div class="overflow-hidden rounded-lg shadow-lg h-[500px] md:h-[600px]">
+                <!-- This is the track that holds all images and slides left/right -->
+                 <!-- it also takes the width of the parent div -->
+                <div id="carousel-track" class="flex transition-transform duration-500 ease-in-out h-full">
+                    <!-- Each image takes full width and doesn't shrink -->
+                    <div class="w-full flex-shrink-0">
+                        <img class="w-full h-full object-cover" src="../assets/DSC_1178.JPG" alt="President" loading="lazy">
+                    </div>
+                    <div class="w-full flex-shrink-0">
+                        <img class="w-full h-full object-cover" src="../assets/FB_IMG_1748635849218.jpg" alt="handing gifts to children" loading="lazy">
+                    </div>
+                    <div class="w-full flex-shrink-0">
+                        <img class="w-full h-full object-cover" src="../assets/DSC_1179.JPG" alt="The Team" loading="lazy">
+                    </div>
+                    <div class="w-full flex-shrink-0">
+                        <img class="w-full h-full object-cover" src="../assets/FB_IMG_1748635237739.jpg" alt="children praying" loading="lazy">
+                    </div>
+                    <div class="w-full flex-shrink-0">
+                        <img class="w-full h-full object-cover" src="../assets/DSC_1206.JPG" alt="Happy" loading="lazy">
+                    </div>
+                    <div class="w-full flex-shrink-0">
+                        <img class="w-full h-full object-cover" src="../assets/DSC_1166.JPG" alt="child" loading="lazy">
+                    </div>
+                    <div class="w-full flex-shrink-0">
+                        <img class="w-full h-full object-cover" src="../assets/FB_IMG_1748621186915.jpg" alt="Happy team" loading="lazy">
+                    </div>
+                    <div class="w-full flex-shrink-0">
+                        <img class="w-full h-full object-cover" src="../assets/DSC_1208.JPG" alt="happy team" loading="lazy">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Navigation Arrows (Optional - you can remove these if you only want auto-play) -->
+            <button id="prev-btn" class="absolute top-1/2 left-4 transform -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-2 rounded-full transition-colors">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                </svg>
+            </button>
+            <button id="next-btn" class="absolute top-1/2 right-4 transform -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-2 rounded-full transition-colors">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                </svg>
+            </button>
+
+            <!-- Dots Indicator (Optional) -->
+            <div id="dots-container" class="flex justify-center mt-4 space-x-2">
+                <!-- Dots will be created by JavaScript -->
+            </div>
+        </div>
+    </section>
+    
+    <section id="services" class=" py-10 sm:py-16 px-4">
+      <div class="flex items-center justify-center pb-8 pt-10">
+        <p class="uppercase font-poppins text-3xl md:text-4xl font-extrabold bg-gradient-to-r from-pink-500 to-pink-950 bg-clip-text text-transparent text-center">
+            Our Services: What Do We Offer
+        </p>
+      </div>
+      <div class=" grid grid-cols-1 md:grid-cols-3 gap-8 lg:p-32 max-w-full mx-auto p-4 rounded-lg " style="background-image: url('../assets/ChatGPT Image Jul 17, 2025, 01_26_49 PM.png'); background-size: cover; background-position: center; background-attachment: fixed;">
+        <!-- Overlay for readability -->
+        <div class="absolute inset-0 bg-black/30 rounded-lg"></div>
+        <!-- Column 1: Stacked Images -->
+        <div class="space-y-8 relative z-10">
+            <div class="flex flex-col items-center">
+                <img src="../assets/ChatGPT Image Jun 13, 2025, 11_06_02 PM.png" alt="Children receiving gifts" class="w-full sm:max-w-[350px] md:max-w-[450px] rounded-lg hover:scale-105 hover:shadow-2xl hover:brightness-90 transition-all duration-500 cursor-pointer aspect-[4/3] object-cover" loading="lazy">
+                <p class="text-white font-poppins text-base sm:text-lg md:text-xl text-center mt-4">
+                    Giving food items to the less privileged
+                </p>
+            </div>
+            <div class="flex flex-col items-center">
+                <img src="../assets/ChatGPT Image Jun 13, 2025, 11_13_40 PM.png" alt="Student listening to the Word of God" class="w-full sm:max-w-[350px] md:max-w-[450px] rounded-lg hover:scale-105 hover:shadow-2xl hover:brightness-90 transition-all duration-500 cursor-pointer aspect-[4/3] object-cover" loading="lazy">
+                <p class="text-white font-poppins text-base sm:text-lg md:text-xl text-center mt-4">
+                    Impacting children through the Word of God
+                </p>
+            </div>
+        </div>
+        <!-- Column 2: Mission Statement -->
+        <div class="flex flex-col justify-center lg:row-span-2  text-white rounded-lg p-6 shadow-lg relative z-10">
+            <p class="uppercase font-serif text-xl sm:text-2xl md:text-3xl lg:text-6xl  text-white rounded-md py-2 mb-4 text-center">
+                Our Mission
+            </p>
+            <p class="font-poppins text-base sm:text-lg md:text-xl leading-relaxed text-center">
+                At Hope For Me, our mission is to help raise a generation of empowered women and children and to see them live a satisfactory life by spreading the word of hope to as many of them that are in need of help.
+            </p>
+        </div>
+        <!-- Column 3: Stacked Images -->
+        <div class="space-y-8 relative z-10">
+            <div class="flex flex-col items-center">
+                <img src="../assets/ChatGPT Image Jun 15, 2025, 10_10_29 PM.png" alt="Children in the playground" class="w-full sm:max-w-[350px] md:max-w-[450px] rounded-lg hover:scale-105 hover:shadow-2xl hover:brightness-90 transition-all duration-500 cursor-pointer aspect-[4/3] object-cover" loading="lazy">
+                <p class="text-white font-poppins text-base sm:text-lg md:text-xl text-center mt-4">
+                    Making children happy during their breaks or holidays
+                </p>
+            </div>
+            <div class="flex flex-col items-center">
+                <img src="../assets/community-outreach.webp" alt="Community outreach event" class="w-full sm:max-w-[350px] md:max-w-[450px] rounded-lg hover:scale-105 hover:shadow-2xl hover:brightness-90 transition-all duration-500 cursor-pointer aspect-[4/3] object-cover" loading="lazy">
+                <p class="text-white font-poppins text-base sm:text-lg md:text-xl text-center mt-4">
+                    Supporting communities with care
+                </p>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- donate section -->
+    <section id="donate" class="pt-20 px-4">
+    
+        <div class="flex justify-center pb-4 lg:pb-8">
+            <h3 class="uppercase sm:text-2xl md:text-4xl font-semibold font-serif text-pink-900 underline">Support our Mission</h3>
+        </div>
+
+        <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-6 px-4 md:px-12 lg:px-24 ">
+            <div  class="md:col-span-4 cursor-pointer hover:scale-105 hover:bg-gray-100  hover:shadow-2xl hover:rounded-2xl">
+                <div class="flex justify-center">
+                    <a href="#bank-details" class=" sm:text-base bg-pink-800 text-white font-semibold font-serif flex justify-center items-center w-58 h-12 rounded-lg">Cash Transfers</a>
+                </div>
+                <div class="pt-5 flex justify-center ">
+                    <p class="lg:w-[350px] lg:h-[250px]  rounded-lg  sm:text-base md:text-2xl flex justify-center items-center leading-relaxed text-pink-800 font-semibold font-serif  transition">You can make a bank transfer or mobile money tranfser to help us cover urgent needs.</p>
+                </div>
+            </div>
+
+            <div class="md:col-span-4 cursor-pointer hover:scale-105 hover:bg-gray-100  hover:shadow-2xl hover:rounded-2xl">
+                <div class="flex justify-center">
+                    <a href="#contact-details" class="sm:text-base bg-pink-800 text-white font-semibold font-serif flex justify-center items-center w-58 h-12 rounded-lg">Clothing Donations</a>
+                </div>
+                <div class="pt-5 flex justify-center ">
+                    <p class="lg:w-[350px] lg:h-[250px]  rounded-lg  sm:text-base md:text-2xl flex justify-center items-center leading-relaxed text-pink-800 font-semibold font-serif transition">We accept gently-used or new clothes for children and adults as every item helps restore dignity</p>
+                </div>
+            </div>
+    
+            <div class="md:col-span-4 cursor-pointer hover:scale-105 hover:bg-gray-100  hover:shadow-2xl hover:rounded-2xl">
+                <div class="flex justify-center">
+                    <a href="#contact-details" class="sm:text-base bg-pink-800 text-white font-semibold font-serif flex justify-center items-center w-58 h-12 rounded-lg">Food Items</a>
+                </div>
+                <div class="pt-5 flex justify-center ">
+                    <p class="lg:w-[350px] lg:h-[250px] rounded-lg  sm:text-base md:text-2xl flex justify-center items-center leading-relaxed text-pink-800 font-semibold font-serif  transition">Help us fight hunger, Rice, beans, oil, canned food - your donations keep families nourished</p>
+                </div>
+            </div>
+    
+            <div class="md:col-span-4 cursor-pointer hover:scale-105 hover:bg-gray-100  hover:shadow-2xl hover:rounded-2xl">
+                <div class="flex justify-center">
+                    <p class="sm:text-base bg-pink-800 text-white font-semibold font-serif flex justify-center items-center w-58 h-12 rounded-lg">Toys for Kids</p>
+                </div>
+                <div class="pt-5 flex justify-center ">
+                    <p class="lg:w-[350px] lg:h-[250px]  rounded-lg  sm:text-base md:text-2xl flex justify-center items-center leading-relaxed text-pink-800 font-semibold font-serif transition">Bring joy to children with toys games, and learning materials</p>
+                </div>
+            </div>
+    
+            <div class="md:col-span-4 cursor-pointer hover:scale-105 hover:bg-gray-100  hover:shadow-2xl hover:rounded-2xl">
+                <div class="flex justify-center">
+                    <a href="#contact-details" class="sm:text-base bg-pink-800 text-white font-semibold font-serif flex justify-center items-center w-58 h-12 rounded-lg">Education Sponsorship</a>
+                </div>
+                <div class="pt-5 flex justify-center ">
+                    <p class="lg:w-[350px] lg:h-[250px]  rounded-lg  sm:text-base md:text-2xl flex justify-center items-center leading-relaxed text-pink-800 font-semibold font-serif transition">Sponsor a child education - help with tuition, books and uniforms. Give them a future worth dreaming about.</p>
+                </div>
+            </div>
+
+            <div class="md:col-span-4 cursor-pointer hover:scale-105 hover:bg-gray-100  hover:shadow-2xl hover:rounded-2xl">
+                <div class="flex justify-center">
+                    <a href="#contact-details" class="sm:text-base bg-pink-800 text-white font-semibold font-serif flex justify-center items-center w-58 h-12 rounded-lg">Health Care</a>
+                </div>
+                <div class="pt-5 flex justify-center ">
+                    <p class="lg:w-[350px] lg:h-[250px]  rounded-lg  sm:text-base md:text-2xl flex justify-center items-center leading-relaxed text-pink-800 font-semibold font-serif transition">Access to medical care shouldn’t be a luxury — help us provide treatments, checkups, and hope to those who need it most.</p>
+                </div>
+            </div>
+        </div>
+
+        <p class="flex justify-center sm:text-base md:text-lg lg:text-2xl font-bold text-pink-700">For cash donations, use the bank details below. For physical donations or sponsorships, contact us directly.</p>
+          
+        <section id="bank-details" class="w-full bg-gradient-to-b from-white to-gray-100 py-16 px-4">
+            <div class="max-w-3xl mx-auto bg-white rounded-xl shadow-xl p-10">
+                <h2 class="text-4xl font-bold text-gray-800 mb-6 text-center px-4 py-2 ">Support Hope For Me</h2>
+                <p class="text-lg text-pink-800 mb-10 text-center font-bold">
+                    Your donation brings hope to children and families in need. Choose a method below to support our mission.
+                </p>
+        
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-10 mb-10">
+                    <div class="border border-gray-200 rounded-lg p-6 hover:shadow-2xl transition">
+                        <h3 class="font-bold text-pink-800 mb-2 text-xl">Bank Transfer</h3>
+                        <p class="text-gray-600 text-xl">Account Name:</p>
+                        <p class="text-gray-800 text-2xl font-medium">Akinteye Omoteye</p>
+                        <p class="text-gray-600 text-xl">Account Number:</p>
+                        <p class="text-gray-800 text-2xl ">1814700162</p>
+                        <p class="text-gray-600 text-xl">Bank:</p>
+                        <p class="text-gray-800 text-2xl">Access Bank</p>
+                    </div>
+            
+                    <div class="border border-gray-200 rounded-lg p-6 hover:shadow-2xl transition">
+                        <h3 class="font-semibold text-pink-800 mb-2 text-xl">Contact Details</h3>
+                        
+                        <p class="text-gray-600 text-xl">Phone Number:  </p>
+                        <p class="text-gray-600 text-xl font-bold">+234 802 204 9356</p> 
+                        <p class="text-gray-600 text-xl">Location:  </p>
+                        <p class="text-gray-600 text-xl font-bold">37, Akinbode Street Temidire Sango Ota, Ogun State Nigeria.</p> 
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+
+    </section>
+    
+
+    <!-- Footer -->
+    <footer id="contact" >
+        <!-- for those who want to join us and build a lasting legacy -->
+        <div class="bg-pink-800 flex flex-col justify-center items-center pb-16">
+            <p class="text-white pt-10 pb-5 font-bold text-3xl font-serif">Join Our Team</p>
+            <p class="text-white text-center text-xl md:text-3xl font-serif px-7 md:px-0">Hope For Me is always open to individuals and organizations who share our vision of making a lasting impact.<br> If you are insterested in joining our team, partnering with us, or contributing your skills and expertise to support our mission,<br> kindly reach out to us. Together, we can make a difference.</p>
+        </div>
+
+        <div class="pt-16 pb-5 grid grid-cols-1 md:grid-cols-3 gap-8 bg-pink-900">
+            <!-- info -->
+            <div>
+                <p class="flex justify-center font-bold text-white text-3xl font-serif underline">Hope For Me</p>
+                <p class="text-center text-white text-xl px-4">At Hope for me, our mission is to help raise a generation of empowered women and children and to see them live a satisfactory life by spreading the word of hope to as many of them that are in the need of help</p>
+            </div>
+
+            <!-- Quick links-->
+            <div>
+                <p class="flex justify-center font-bold text-white text-3xl font-serif underline">Quick Links</p>
+                <ul class="grid grid-cols-1 place-items-center gap-4">
+                    <li>
+                        <a href="#" class="text-white">Home</a>
+                    </li>
+                    <li>
+                        <a href="#services" class="text-white">Services</a>
+                    </li>
+                    <li>
+                        <a href="#donate" class="text-white">Donate</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Contact -->
+            <div>
+                <p class="flex justify-center font-bold text-white text-3xl font-serif underline">Contact Us</p>
+                <div>
+                    <p class="text-center text-white text-xl">37, Akinbode Street Temidire<br> Sango Ota, Ogun State</p>
+                    <a class="text-center flex justify-center text-white text-xl">+234 802 204 9356</a>
+                    <a href="https://www.facebook.com/share/15REfFtTts/" target="_blank" rel="noopener noreferrer" class="text-center text-white text-xl flex justify-center">Facebook: Hope for Me</a> 
+                </div>
+            </div>
+        </div>
+        <div class="pt-5 pb-5 flex items-center justify-center text-center text-xl text-white bg-pink-950 h-14">
+            &copy; 2025 Hope For Me. All rights reserved.
+            
+        </div>
+    </footer>
+    
+<script src="app.js"></script>
+</body>
+</html>
